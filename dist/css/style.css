@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background : #1d1d1d;
+  color      : #a2a2a2;
+  font-family: 'Rajdhani', sans-serif;
+  font-size  : 22px;
+  height     : 100%;
+  width      : 100%;
+  padding    : 0;
+}
+
+a {
+  color          : #ffff;
+  text-decoration: none;
+  display        : contents;
+}
+
+textarea {
+  height       : 6rem;
+  border       : 1px solid #efeaea;
+  border-radius: 15px;
+  resize       : none;
+  padding      : 1rem;
+}
+
+.row {
+  display        : flex;
+  width          : 100%;
+  align-items    : center;
+  justify-content: center;
+  flex-wrap      : wrap;
+}
+
+.row>div {
+  margin: .3rem;
+}
+
+.container {
+  display        : flex;
+  width          : 100%;
+  align-items    : center;
+  justify-content: center;
+  flex-wrap      : wrap;
+  padding-top    : 2rem;
+  padding-bottom : 2rem;
+}
+
+.container>div>img {
+  padding: 1rem;
+}
+
+.row-icon {
+  height: 4rem;
+}
+
+/* LOGO */
+.logo {
+  position: relative;
+}
+
+.text-logo {
+  font-family: 'Gloria Hallelujah', cursive;
+  color      : #E91C5D;
+  position   : absolute;
+  top        : 45%;
+  width      : 100%;
+  text-align : center;
+}
+
+
+canvas {
+  width  : 50%;
+  padding: 0;
+  margin : auto;
+  z-index: 0;
+  display: block;
+}
+
+/* NAVBAR */
+.nav {
+  width        : 100%;
+  background   : #a50e3e;
+  margin-bottom: 3rem;
+}
+
+.nav>ul>li {
+  display: inline-block;
+}
+
+.nav>ul>li>a {
+  display        : block;
+  color          : #F8F8F8;
+  text-decoration: none;
+  padding        : 2rem;
+}
+
+.nav>ul>li>a:hover {
+  background: #840029;
+}
+
+/* CARD */
+.card {
+  background   : #F8F8F8;
+  border-radius: 10px;
+  display      : grid;
+  box-shadow   : 0 0 25px rgb(0, 0, 0);
+}
+
+.card-title {
+  background             : rgb(233, 27, 93);
+  border-top-left-radius : 10px;
+  border-top-right-radius: 10px;
+  display                : block;
+  padding                : 1rem;
+  font-size              : 18px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+/* TEXTO */
+.text-white {
+  color: white;
+}
+
+.text-red {
+  color: #e91b5d;
+}
+
+.text-gray {
+  color: #8ea2ac;
+}
+
+.text-green {
+  color: #009C10;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-big {
+  font-size: 50px;
+}
+
+.text-medium {
+  font-size: 36px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 50px;
+}
+
+h2 {
+  font-weight: 100;
+  font-size  : 28px;
+}
+
+h3 {
+  font-weight: 100;
+  font-size  : 28px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size  : 25px;
+}
+
+/* COLUNAS */
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 49%;
+}
+
+.col-3 {
+  width: 32%;
+}
+
+.col-4 {
+  width: 24%;
+}
+
+.center {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.rounded {
+  border-radius: 35px;
+}
+
+/* ALINHAMENTO */
+.left {
+  justify-content: inherit;
+}
+
+/* FORUMULARIO */
+label {
+  font-size   : 15px;
+  padding-top : .5rem;
+  padding-left: 1.3rem;
+}
+
+input {
+  border-radius: 25px;
+  padding      : .8rem;
+  margin       : .3rem;
+  border       : 1px solid #efeaea;
+}
+
+.input-lg {
+  font-size: 15px;
+}
+
+.btn {
+  border-radius: 10px;
+  border       : 0px;
+  padding      : 10px 20px 10px 22px;
+  background   : #adadad;
+  font-size    : 1rem;
+  margin-top   : 1rem;
+  cursor       : pointer;
+}
+
+.btn-red {
+  background   : #e91b5d;
+  color        : #F8F8F8;
+  border-bottom: 5px #d21753 solid;
+  border-right : 2px #d21753 solid;
+}
+
+.btn-red-light {
+  background   : #ea487c;
+  color        : #F8F8F8;
+  border-bottom: 5px #e91b5d solid;
+  border-right : 2px #e91b5d solid;
+}
+
+.btn-red:hover {
+  background: #ff0052;
+  color     : #F8F8F8;
+}
+
+/* ANIMAÇÕES */
+.fadeIn {
+  -webkit-animation: fadein 3s;
+  -moz-animation   : fadein 3s;
+  -ms-animation    : fadein 3s;
+  -o-animation     : fadein 3s;
+  animation        : fadein 3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.bloom {
+  -webkit-animation: bloom 1s infinite;
+  -moz-animation   : bloom 1s infinite;
+  -ms-animation    : bloom 1s infinite;
+  -o-animation     : bloom 1s infinite;
+  animation        : bloom 1s infinite;
+}
+
+@keyframes bloom {
+  from {
+    width: 32px;
+  }
+
+  to {
+    width: 34px;
+  }
+}
+
+@-moz-keyframes bloom {
+  from {
+    width: 32px;
+  }
+
+  to {
+    width: 34px;
+  }
+}
+
+@-webkit-keyframes bloom {
+  from {
+    width: 32px;
+  }
+
+  to {
+    width: 34px;
+  }
+}
+
+@-ms-keyframes bloom {
+  from {
+    width: 32px;
+  }
+
+  to {
+    width: 34px;
+  }
+}
+
+@-o-keyframes bloom {
+  from {
+    width: 32px;
+  }
+
+  to {
+    width: 33px;
+  }
+}
+
+/* CORES DE FUNDO */
+
+.bg-green {
+  background: #009C10;
+}
+
+.bg-red {
+  background: #e91b5d;
+}
+
+.bg-purple{
+  background: #c6c6;
+}
+/* IMAGEM */
+.img-big {
+  width: 100%;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 768px) {
+  .text-logo {
+    font-size: 100%;
+  }
+
+  canvas {
+    width  : 100%;
+    padding: 0;
+    margin : auto;
+    z-index: 0;
+    display: block;
+  }
+
+  /* CARD */
+  .card {
+    background   : #F8F8F8;
+    border-radius: 10px;
+    display      : grid;
+    box-shadow   : 0 0 25px rgb(0, 0, 0);
+  }
+
+  .card-title {
+    background             : rgb(233, 27, 93);
+    border-top-left-radius : 10px;
+    border-top-right-radius: 10px;
+    display                : block;
+    padding                : 1rem;
+    font-size              : 18px;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  /* COLUNAS */
+  .col-1 {
+    width         : 100%;
+    padding-top   : 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .col-2 {
+    width         : 100%;
+    padding-top   : 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .col-3 {
+    width         : 100%;
+    padding-top   : 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .col-4 {
+    width         : 100%;
+    padding-top   : 2rem;
+    padding-bottom: 2rem;
+  }
+
+}
+

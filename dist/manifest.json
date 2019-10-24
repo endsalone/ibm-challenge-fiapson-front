@@ -1,0 +1,15 @@
+{
+  "name": "FIAPSON",
+  "short_name": "FIAPSON",
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#0476F2",
+  "background_color": "#fff",
+  "icons": [
+    {
+      "src": "/image/logo/logo.png", // usually kept in the static/icons folder
+      "sizes": "512x512", // enter the size of the image 
+      "type": "image/png" // enter the type of the image eg: image/png,
+    }
+  ]
+}
